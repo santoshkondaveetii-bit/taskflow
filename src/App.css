@@ -1,0 +1,29 @@
+/* TASKFLOW custom utility animations and scrollbar styles */
+@keyframes checkmarkBounce {
+  0% { transform: scale(0.8); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.animate-check {
+  animation: checkmarkBounce 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.35);
+}
